@@ -1,0 +1,105 @@
+/* SignUp.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .StyledContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+  }
+  
+  /* SignUpBox styles */
+  .SignUpBox {
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  
+    /* Gradient overlay */
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      opacity: 0.8;
+    }
+  
+    /* Hover effect */
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Circle design elements */
+  .DesignElement1,
+  .DesignElement2 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  
+  .DesignElement1 {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .DesignElement2 {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .SignUpHeading {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .StyledForm {
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  .StyledNameContainer {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .TextField {
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  /* Updated button styles with a new gradient */
+  .StyledButton {
+    margin-top: 16px;
+    background: linear-gradient(to right, #43e97b, #38f9d7);
+    color: #ffffff;
+  }
+  
+  .StyledLink {
+    font-weight: bold;
+    color: #43cea2;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
